@@ -1,1 +1,162 @@
 
+.app {
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.products-section {
+  flex: 2;
+  min-width: 300px;
+}
+
+.cart-section {
+  flex: 1;
+  min-width: 300px;
+}
+.product-list{
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius:20px;
+    padding: 20px;
+}
+
+.product-list h2, .cart h2, .wishlist h2 {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  background: white;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.product-card h3 {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+.product-card button {
+  margin: 5px;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.product-card button:hover {
+  background-color: #0056b3;
+}
+
+.cart, .wishlist {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background: #f9f9f9;
+}
+
+.cart-item, .wishlist-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.quantity-controls button {
+  margin: 0 5px;
+  padding: 2px 8px;
+  cursor: pointer;
+}
+
+.cart-total {
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 2px solid #ddd;
+  text-align: right;
+}
+
+.coupon {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background: #f9f9f9;
+}
+
+.coupon input {
+  padding: 8px;
+  margin-right: 10px;
+  width: 60%;
+}
+
+.coupon button {
+  padding: 8px 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.available-coupons {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.applied-coupon {
+  margin-top: 10px;
+  padding: 8px;
+  background-color: #d4edda;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
