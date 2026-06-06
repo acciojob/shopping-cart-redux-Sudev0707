@@ -1,12 +1,6 @@
-import { configureStore } from '@reduxjs/toolkit';
-import cartReducer from './cartSlice';
-import wishlistReducer from './wishlistSlice';
-import discountReducer from './discountSlice';
+import { createStore } from "redux";
+import reducer from "./reducer";
 
-export const store = configureStore({
-  reducer: {
-    cart: cartReducer,
-    wishlist: wishlistReducer,
-    discount: discountReducer,
-  },
-});
+const store = createStore(reducer);
+
+export default store;
